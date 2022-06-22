@@ -1,0 +1,733 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Roboto";
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.mx-auto {
+    margin: 2rem auto;
+}
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.w90 {
+    width: 90%;
+    
+}
+.rotate {
+    transform: rotate(90deg);
+}
+
+.verticA{
+    vertical-align: middle;
+}
+.link {
+    color:rgb(198, 194, 194);
+    text-decoration: none;
+    margin: 1rem 0;
+}
+.link:hover {
+    color:white;
+}
+h3 {
+    margin-bottom: 0;   
+}
+.container2 {
+    min-height: 100vh;
+    width: 100%;
+    display:block;
+    background-color: #ecf0f1;
+}
+header {
+    background-color: rgb(252, 252, 252);
+    width: 100%;
+    box-shadow: 0 2px 5px 0px grey;
+    margin-bottom: 0.8rem;
+}
+.headerContainer {
+    position: relative;
+    margin: auto;
+    padding: 0.5em 0;
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    
+    
+}
+.searchContainer {
+    display: flex;
+    width:70%;
+    position: absolute;
+    top:-50%;
+    left:50%;
+    background-color:#3B3B43;
+    transform: translate(-50%,-50%);
+    justify-content:space-between;
+    box-shadow: 0 2px 5px 0px grey;
+    
+}
+
+.searchContainer input {
+    position: relative;
+    border:0;
+    outline:none;
+    width: 90%;
+    height: 3rem;
+    padding:0.5rem;
+    color: rgb(211, 209, 209);
+    font-size: 2rem;
+    border-radius: 0.2rem;
+    background-color:#3B3B43;
+    
+}
+
+.searchContainer button {
+    background-color:#3B3B43;
+    flex-basis:10%;
+    border:0;
+    padding: 0;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color:rgb(211, 209, 209);
+    cursor: pointer;
+}
+.searchContainer button:hover{
+    color: white;
+}
+.searchContainer input::placeholder {
+    font-size: 1.5rem;
+    color: rgb(211, 209, 209);
+}
+.searchOutput {
+    
+    position: absolute;
+    display:none;
+    top:100%;
+    background-color: white;
+    width: 100%;
+    flex-basis: 100%;
+    height: 25rem;
+    box-shadow: 0 2px 15px 0px grey;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+    overflow-y: scroll;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchProduct {
+    margin: 1rem;
+    width: 15rem;
+
+    padding: 1rem;
+    background-color: #3B3B43;
+    color: rgb(211, 209, 209);
+    box-shadow: 0 2px 5px 0px grey;
+}
+.searchProduct img{
+    height:4rem;
+    width: 4rem;
+    object-fit: cover;
+    margin:0.5rem;
+}
+.searchAttribute {
+    font-size: 0.8rem;
+}
+.searchPrice span {
+    color: orange;
+}
+.headerBtn {
+    border: 0;
+    background-color:transparent;
+    padding:0;
+    width:fit-content;
+    margin-right: 1rem; 
+    cursor: pointer;
+}
+.menuBtn {
+    display: none;
+}
+.headerBtn i {
+    font-size:1.4rem;
+}
+
+.avatarContainer {
+    position: relative;
+    margin-left: auto;
+    text-align: center;
+    cursor: pointer;
+}
+.userMenu {
+    position:absolute;
+    width:150px;
+    padding: 1rem;
+    top: 50%;
+    left:-50%;
+    transform: translate(-50%, 17%);
+    list-style: none;
+    background-color:rgb(252, 252, 252);
+    box-shadow: 0 2px 5px 0px grey;
+    font-size: 1.2rem;
+    text-align:center;
+}
+.userMenu p {
+    margin: 0.2rem 0 0.5rem 0;
+}
+
+.userMenu a, .disconnectBtn {
+    text-decoration: none;
+    font-size:1rem; 
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+    margin:0.5rem 0;
+}
+.disconnectBtn {
+    background-color: red;
+    padding: 0.2rem;
+    border-radius:0.2rem;
+    color: white;
+    width: 100%;
+   
+}
+.disconnectBtn:hover {
+    background-color:rgb(178, 15, 15);
+}
+.userMenu a {
+    color:grey;
+}
+.userMenu a:hover {
+    color: rgb(54, 54, 54);
+}
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius:25px;
+    background-color:rgb(129, 124, 124);
+}
+
+.sectionHead {
+    background-color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px 0px grey;
+
+}
+.sectionHead div {
+    margin: auto;
+}
+.breadcrumb {
+    text-decoration: none;
+    font-size:1.7rem;
+    color: blue;
+    
+}
+.breadcrumb::after {
+    content: ">";
+    margin: 0 8px;
+    color:black;
+}
+
+.breadcrumb:last-of-type::after {
+    content: "";
+}
+.sectionHead h2 {
+    margin-top:0;
+    padding:1rem;
+    margin: auto;
+}
+section {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: start;
+    justify-content:center;
+    border: 2rem solid rgb(252, 252, 252);
+    border-radius:0.3rem;
+    min-height:70vh;
+    
+    background-color: rgb(252, 252, 252);
+    box-shadow: 0 1px 5px 0px grey;
+}
+
+.title {
+    flex-basis: 100%;
+    height:fit-content;
+    margin:0 0 5rem 0;
+    padding:2rem 0;
+    background-color:#3B3B43;
+    color:white;
+    text-align: center;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+
+}
+nav {
+    background-color:rgb(59, 59, 67);
+    padding: 0.5rem;
+    min-height:100vh;
+    width:100px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(198, 194, 194);
+    position: relative;
+}
+
+.navMenu {
+    position:absolute;
+    top:1%;
+    left: 100%;
+    transform:translate(-50%);
+    height: 3rem;
+    width: 3rem;
+    background-color: red;
+    font-size:2rem;
+    border-radius: 3rem;
+    border: 0;
+    cursor: pointer;
+   
+}
+.slidein {
+    width:350px;
+}
+
+.displayLink {
+    display: none;
+}
+  
+.navTitle {
+    font-weight:lighter;
+    text-align: center;
+}
+
+nav hr {
+   width: 90%;
+   border: 1px rgb(140, 140, 140) solid;
+}
+
+.navSection {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.homeContainer {
+    display:flex;
+    text-align:center;
+}
+.homeIcon {
+    flex:2;
+}
+.homeLink {
+    flex:3;
+}
+.manageContainer {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.contentContainer {
+    flex-basis: 100%;
+}
+.contentContainer a{
+    display:block;
+    padding-left:2rem;
+}
+.manageBtn {
+    border: 0;
+    padding: 0;
+    background-color:transparent;
+    cursor: pointer;
+    font-size:1.5rem;
+    color: rgb(140, 140, 140);
+    
+}
+
+
+.active {
+  color: white;
+  font-weight: bold;
+}
+   /*************************** FORMS ********************************/
+   .message {
+       width: fit-content;
+       height: fit-content;
+       margin:1rem auto;
+       padding:1rem 2rem;
+       font-size:1.2rem;
+       border-radius: 0.3rem;
+   }
+.messageDone {
+    background-color: rgb(5, 166, 5);
+    border: solid 3px green;
+}
+.messageUndone {
+    background-color: red;
+    border: solid 3px rgb(225, 3, 3);   
+}
+.formsLinks {
+    height: fit-content;
+
+    width: 11rem;
+    text-align: center;
+    padding: 1rem;
+    margin:0 0 2rem 1rem;
+    text-decoration: none;
+    font-size:1.5rem;
+    background-color:#3B3B43;
+    color:#C6C2C2;
+    border-radius: 0.3rem;
+    box-shadow: 0 1px 3px 1px grey;
+}
+.formsLinks:hover {
+    color: white;
+    box-shadow:inset 0 1px 5px 1px white;
+    
+}
+/*************************** FORMULAIRE PRODUIT ********************************/
+
+#productChecker {
+    margin:1.5rem;
+    text-align:center;
+    width: 100%;
+    
+}
+#productChecker table {
+    margin: 0.5rem auto;
+    
+}
+#productChecker table tr td {
+    width: 12rem; 
+    padding:0.5rem 0; 
+}
+#removeProduct {
+    display:inline-block;
+
+    margin-right: 0.5rem;
+    background-color: red;
+    font-size: 1.2rem;
+    color: white;
+    padding: 0.2rem 1rem;
+    font-weight: bold;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+#removeProduct {
+    background-color: red;
+    text-decoration: none;
+    color: white;
+    border: 1px solid black;
+}
+#removeProduct:hover {
+    background-color:rgb(178, 15, 15);
+}
+.inputPriceImpact, .inputQuantity {
+    width: 5rem;
+}
+.inputPhoto {
+    padding: 1rem;
+}
+.separatorContainer {
+    display: inline-block;
+    vertical-align: top;
+    width: 20rem;
+
+}
+.separatorContainer > input, .separatorContainer > select, .separatorContainer > textarea {
+    display: block;
+    width: 17.8rem;
+    margin:1.5rem  0!important;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    font-size:1rem;
+    resize: none;
+    font-family: "roboto";
+}
+.vl {
+    border-left:1px solid grey;
+    display: inline-block;
+    height: 100%;
+    padding:0 1rem;
+
+
+}
+.attributeTitle {
+    display: inline-block;
+    width: 49%;
+  
+}
+.attributeBtn {
+    display: inline-block;
+    text-align: right;
+    width: 49%;
+    cursor: pointer;
+    color: grey;
+}
+.attributeBtn i {
+    width: fit-content;
+    height: fit-content;
+    font-size: 1.3rem;
+    height: 0.1rem;
+}
+
+.attributeBtn:hover {
+    color: black;
+ 
+}
+.attributeLabel {
+    text-align: center;
+    width: 100%;
+   
+}
+.attributeLabel, .attributeInput {
+    display: inline-block;
+    margin: 0;
+}
+.valuesContainer {
+    height: 0;
+    background-color:white;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    justify-content: start;
+    text-align: center;
+    overflow-y: scroll;
+    box-shadow:inset 0 1px 5px 1px grey;
+    
+}
+
+.valuesContainer2 {
+    height: 8rem;
+   
+}
+.valuesContainer  div {
+    
+    width: 4rem;
+    margin: 0.3rem;
+    height: fit-content;
+    border-radius: 0.2rem;
+    border: 1px solid gray;
+}
+
+
+  /*************************** FORMULAIRE ********************************/
+
+  .form {
+      
+      margin: 0 auto;
+      
+      width: fit-content;
+      background-color: #ECF0F1;
+      padding: 4rem;
+      box-shadow: 0 2px 5px 0px grey;
+      border-radius: 0.2rem;
+      font-size: 1.2rem;
+    }
+    #formProductToAdd {
+        margin: 2rem auto;
+        background-color: transparent;
+        box-shadow: none;
+        border: 1px solid black;
+    }
+    #formProduct {
+
+        margin: 2rem auto;
+    }
+.ongletDisplay {
+    width:100%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.ongletDisplay a{
+    font-size:1.5rem;
+    background-color:#3B3B43;
+    padding: 0.2rem 0.5rem;
+    margin: 0 1rem;
+    width: 8rem;
+    border-radius: 0.2rem;
+}
+label {
+   display: block;
+
+   margin:1rem 0;
+}
+.form > select { 
+    display: block;
+    width: 19rem;
+    margin: 0!important;
+    box-sizing: 0;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    font-size:1rem;
+
+
+}
+
+.form > input {
+    display: block;
+    width: 17.8rem;
+    margin:1.5rem  0!important;
+    height: 2rem;
+    padding:0 0.5rem;
+    border-radius: 0.3rem;
+    font-size:1rem;
+}
+
+
+
+.form button, #productChecker button, .formBtn  {
+    display:block;
+
+    margin:0.5rem 0 0.5rem auto;
+    background-color: #3AA1D0;
+    font-size: 1.2rem;
+    color: white;
+    padding: 0.2rem 1rem;
+    font-weight: bold;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    
+}
+
+.form button:hover , #productChecker button:hover {
+        background-color:green;
+}
+
+.tableHeader {
+    background-color: #596275;
+    color: white;
+}
+
+.tableColor {
+    width: 1rem;
+    height: 1rem; 
+    display: inline-block;  
+    vertical-align: middle;
+    border: 1px solid black;
+    
+}
+.firstColor {
+ background-color: #f7d794;
+}
+
+.secondColor {
+ background-color: #b19558;
+}
+
+
+
+
+
+
+/************************************* Tables **********************************/
+.tdSize1 {
+    width: 5%;
+}
+.tdSize2 {
+    width: 25%;
+}
+.tableContainer{
+    width:fit-content;
+    padding: 1rem;
+    background-color: #ECF0F1;
+    overflow: hidden;
+    overflow-x:scroll;
+    box-shadow: 0 2px 5px 0px grey;
+}
+
+.table {
+   
+    margin: auto;
+    text-align: center;
+    
+}
+
+
+.table tr > td {
+    height:2rem;
+    width: 10rem;
+}
+
+.declineBtn {
+    background-color: transparent;
+    border:0;
+    cursor: pointer;
+}
+ .decline {
+    display: none;
+    
+   
+}
+.decline > tr td{
+    width: 20rem;
+   
+}
+
+.pagination {
+    margin: 1rem 0;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+
+
+
+
+/******************* responsive ***********************/
+
+@media screen and (max-width: 990px) {
+    .container {
+        position: relative;
+    }
+    .menuBtn {
+        display: block;
+    }
+    nav {
+        position: absolute;
+        left:-50%;
+        height:100%;
+        box-shadow:1px 10px 100px 1px black;
+    }
+    .searchContainer {
+        width: 50%;
+    }
+  
+    .searchContainer::placeholder {
+        font-size:1.2rem;
+    }
+    
+    .FormsLinks {
+        width: 30%;
+       
+    }   
+
+    .searchOutput {
+        width: 150%;
+    }
+
+    .separatorContainer {
+        display: block;
+    }
+    .vl {
+        display: none;
+    }
+    section {
+        width: 85%;
+    }
+    
+}
+
+@media screen and (max-width: 750px) { 
+
+
+
+}

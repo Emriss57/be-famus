@@ -1,0 +1,774 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Roboto";
+  position: relative;
+
+}
+.ink {
+  position:fixed;
+  top: 95vh;
+  left:98%;
+  transform: translate(-5vh,-5%)
+}
+.d-none {
+  display: none;
+}
+.w90 {
+  width: 90%;
+  margin:auto;
+
+}
+.fontW {
+  font-weight : bold;
+}
+
+.p-3 {
+  padding: 9px;
+}
+
+.ps-3 {
+  padding:0 25px 0 9px;
+}
+.bgWhite {
+  background-color: #FEFEFE;
+ }
+
+
+ /********************* darktheme *********************/
+.darkTheme{ 
+ 
+  color: rgb(255, 255, 255);
+  background-color: rgb(90, 90, 90);
+}
+.darkTheme .bgWhite, .darkTheme .sectionHead { 
+  background-color: rgb(90, 90, 90);
+  color: rgb(255, 255, 255);
+}
+.darkTheme header, .darkTheme .footerContainer, 
+ .darkTheme form fieldset { 
+  background-color: rgb(37, 37, 37);
+  color: rgb(255, 255, 255);
+}
+
+.darkTheme a, .darkTheme i  {
+  color: white;
+}
+
+ /***********************************************/
+ 
+.bgColor1 {
+  background-color: #5C0761;
+}
+.bgColor2 {
+  background-color: #990BA1;
+}
+
+.linkStyleDisabled {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+/* Header */
+
+header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(248, 237, 237); 
+  font-size:1.3rem;
+}
+
+
+.linkContainer a{
+  display: inline-block;
+  line-height:61px;
+  text-align: center;
+  padding:0.3rem 1rem;
+}
+.logoContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.logo  {
+  width: 200px;
+
+}
+
+i {
+  font-size:1.5rem;
+}
+.iconMenu {
+  position: relative;
+  cursor: pointer;
+  vertical-align: middle;
+}
+.counter {
+  display: inline-block;
+}
+.userMenu {
+  position:absolute;
+  width:300%;
+  padding: 1rem;
+  margin:0;
+  top: 100%;
+  left:50%;
+  transform: translate(-50%, 17%);
+  list-style: none;
+  background-color:rgb(252, 252, 252);
+  box-shadow: 0 2px 5px 0px grey;
+  font-size: 1.2rem;
+  text-align:center;
+}
+
+.userMenu p {
+  margin: 0.2rem 0 0.5rem 0;
+}
+
+.userMenu a {
+  background-color: transparent;
+}
+
+.userMenu a, .disconnectBtn {
+  text-decoration: none;
+  font-size:1rem; 
+  border: 0;
+  font-weight: bold;
+  cursor: pointer;
+  margin:0.5rem 0;
+}
+.disconnectBtn {
+  background-color: red;
+  padding: 0.2rem;
+  border-radius:0.2rem;
+  color: white;
+  width: 100%;
+ 
+}
+.disconnectBtn:hover {
+  background-color:rgb(178, 15, 15);
+}
+.userMenu a {
+  color:grey;
+}
+.userMenu a:hover {
+  color: rgb(54, 54, 54);
+}
+.avatar {
+ 
+  width: 1.8rem;
+  height:1.8rem;
+  border-radius:25px;
+  background-color:rgb(129, 124, 124);
+}
+.navigation {
+  margin:0 0 2rem 0;
+  display: flex;
+  align-items: center;
+  box-shadow:0px 0px 10px 0px rgb(212, 212, 212);
+  list-style: none;
+  padding:0.25rem 0;
+}
+.navigation > li {
+  padding:0 1rem;
+}
+.linkNavigation {
+  display:inline-flex;
+  border-bottom: 4px solid transparent;
+  padding-top: 4px;
+  line-height: 2.5rem;
+  
+}
+.navInput {
+  margin-left: auto;
+}
+.activeNavigation {
+  border-bottom: 4px solid orange;
+}
+.navigation li a:hover {
+  
+  border-bottom: 4px solid orange;
+}
+
+.sectionHead {
+  background-color: white;
+}
+.sectionHead a {
+  text-decoration: none;
+}
+.sectionHead a:after{
+  content:'>';
+  margin:0 0.2rem;
+  
+}
+.sectionHead a, .sectionHead span {
+  font-size: 1rem;
+}
+section {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  margin: 3rem auto;
+
+}
+/**************** DETAIL ****************/
+.searchMotor {
+
+  padding:1rem 0;
+}
+.searchMotor hr{
+  background-color: rgb(162, 158, 158);
+}
+.searchMotor p{
+  font-weight: bold;
+  display: inline-block;
+  width: 80%;
+  vertical-align: middle;
+}
+.searchMotor i{
+  font-weight: bold;
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: middle;
+  background-color: transparent;
+}
+
+.searchMotorSection {
+  height: 0;
+  overflow: hidden;
+}
+.tableColor {
+  width: 2rem;
+  height: 2rem; 
+  display: inline-block;  
+  border: 1px solid black;
+  margin: 0.2rem;
+}
+
+.inputColor{
+  display: block;
+  margin: 30% auto;
+}
+
+.productDisplay {
+  display: flex;
+  vertical-align: top;
+  width:fit-content;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  font-size: 0.8rem;
+ 
+}
+
+.productCard {
+  margin:1rem;
+  padding:1rem;
+  box-shadow:0px 0px 10px 0px rgb(212, 212, 212);
+
+}
+
+.productCard:hover {
+  box-shadow:0px 0px 10px 0px rgb(212, 212, 212) inset;
+}
+.productCard a{
+  text-decoration: none;
+  color: black;
+}
+
+.productImgDisplay {
+  width: 100%;
+  height: 20rem;
+}
+.productCard p {
+  margin: 0.2rem 0;
+
+}
+.priceDisplay {
+  color: #FF850C;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+
+/*********    PRODUCT **************/
+
+.productImgContainer {
+  flex-basis:40%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content:center;
+
+}
+.productDetailsContainer {
+  margin-bottom:2rem;
+  flex-basis: 30%;
+}
+.productDetailsContainer h1 {
+  margin-top: 0;
+}
+.firstDisplay {
+  height: 40rem;
+  object-fit: contain;
+  display:inline-block;
+}
+
+.secondDisplay {
+  display:block;
+  height:5rem;
+  object-fit:contain;
+  margin:0 0.5rem 0.5rem 0;
+  cursor: pointer;
+}
+
+
+.productDetailsContainer .matieres{
+  pointer-events: none;
+}
+
+.detailsContent {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+}
+
+.taille {
+  display:inline-block;
+  border:solid 1px black;
+  width:2.5rem;
+  height:2.5rem;
+  text-align:center;
+  line-height:2.5rem;
+  border-radius: 0.5rem;
+}
+
+.detailsContent {
+  margin:0;
+}
+.quantityContainer {
+  margin:1rem 0;
+}
+.quantityContainer input{
+  display: block;
+  margin-top: 1rem;
+  width: 4rem;
+}
+.basketBtn {
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  background-color: orange;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.basketBtn:hover {
+  background-color: green;
+  color: white;
+  border: 1px solid black;
+
+}
+
+/*  FOOTER  */ 
+.footerContainer {
+  background-color: rgb(248, 237, 237); 
+  justify-content: center;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+.leftSide,.rightSide  {
+  display: inline-block;
+  width: 45%;
+  vertical-align: top;
+
+}
+.footerRubriqueLeft {
+  display: inline-block;
+  vertical-align: middle;
+  width: 200px;
+  height: 170px;
+  font-size: 0.8rem;
+  text-align: start;
+}
+.switchContainer {
+  position: relative;
+  vertical-align: middle;
+  width: 40px;
+  height:18px;
+}
+
+.switchContainer input {
+  opacity: 0;
+  width: 32px;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #ccc;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 11px;
+  width: 11px;
+  left: 4px;
+  bottom: 1.9px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.footerRubriqueLeft > a {
+  display: block;
+}
+
+.footerRubriqueRight {
+  font-size: 0.8rem;
+
+}
+.footerRubriqueRight div > a {
+ padding: 1rem;
+ color: black;   
+}
+
+
+
+/********************* LOGIN **************************/
+.logError {
+  width: 250px;
+  margin: 2rem auto;
+  background-color:red;
+  border: 0.2rem solid rgb(183, 2, 2);
+  border-radius: 6px;
+  text-align:center;
+  font-size: 1.2rem
+}
+.formContainer {
+  margin:6rem 0;
+}
+.formLogin {
+  margin: auto;
+  width: fit-content;
+  text-align: center;
+}
+.formLogin fieldset {
+  margin: 0;
+  padding: 2rem;
+  background-color: rgb(98, 100, 170);
+  box-shadow: 0 2px 5px 2px grey;
+  border-radius: 0.3rem;
+  border: 0;
+}
+
+legend i {
+  font-size: 8rem;
+  color: orange;
+  background-color:#f5f6fa;
+  border-bottom-right-radius:3.5rem; 
+  border-bottom-left-radius:3.5rem; 
+  text-shadow: 1px 5px 5px grey;
+
+}
+.formLogin input{
+  display: block;
+  width: 18.4rem;
+  padding: 0.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 0.3rem;
+  margin:0.5rem auto;
+  border:0;
+  background-color:white;
+  font-size: 1rem;
+
+  
+}
+.formLogin button{
+
+  padding: 0.5rem;
+  border: 0;
+  border-radius: 0.5rem;
+  background-color: orange;
+  cursor: pointer;
+  display: block;
+  margin: 2rem 0 0 auto;
+  font-size: 1.2rem;
+
+  
+}
+.formLogin button:hover{
+  background-color: green;
+  color: white;
+  
+}
+
+/********************* LOGINUSER **************************/
+.errorRegisterUser {
+  width: 15rem;
+  padding: 0.5rem;
+  border: 1px solid;
+  border-radius: 0.2rem;
+  margin:auto;
+}
+
+.formLogin2 {
+  
+  margin: auto;
+  width: fit-content;
+
+}
+.formLogin2 fieldset{
+  background-color:#F8EDED;
+  text-align: center;
+  box-shadow: 1px 1px 2px 0px grey;
+  padding:2rem;
+  border-radius: 0.3rem;
+}
+.separator {
+  display: inline-block;
+  vertical-align: top;
+}
+.formLogin2 hr {
+  display: inline-block;
+  height: 350px;
+  margin: 0 0.5rem;
+  vertical-align: middle;
+}
+.formLogin2 label{ 
+  display: block;
+  margin:0.9rem 0 0.5rem 0;
+}
+
+.formLogin2 input{
+  display: block;
+  width: 18.4rem;
+  padding: 0.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 0.3rem;
+  border:0;
+  background-color:white;
+  font-size: 1rem;
+
+  
+}
+.formLogin2 button{
+
+  padding: 0.5rem;
+  border: 0;
+  border-radius: 0.5rem;
+  background-color: orange;
+  cursor: pointer;
+  display: block;
+  margin: 2rem 0 0 auto;
+  font-size: 1.2rem;
+
+  
+}
+.formLogin2 button:hover{
+  background-color: green;
+  color: white;
+  
+}
+
+
+
+/******************* Responsive *****************/
+
+@media screen and (max-width: 1006px){
+
+ .bgWhite {
+  color:#FF850C;
+ }
+  header {
+    flex-direction: column-reverse;
+   
+
+  }
+
+  .userIconMenu {
+    margin: 1rem 0;
+    width:90%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+   
+  }
+  
+
+  .logoContainer{
+    position: initial;
+    left:0;
+    top:0;
+    transform: translate(0,0);
+  }
+  .linkContainer{
+    position: relative;
+    align-self: start;
+
+  }
+  .mobileMenu {
+    display: block;
+    background-color:transparent;
+    border:none;
+    cursor: pointer;
+ 
+  }
+  .mobileMenu i {
+    font-size:3rem;
+  }
+  .menuContainer{
+    
+    background-color:rgba(0, 0, 0, 0.291);
+    position: fixed;
+
+    height:100vh;
+    width: 50%;
+    top:2%;
+    left:-53%;
+ 
+     box-shadow:0px 0px 10px 0px rgb(212, 212, 212);
+    z-index: 10;
+  }
+  .menuContainer div {
+    background-color:#F8EDED;
+    width:100%;
+    height:100%;
+    box-shadow:0px 0px 10px 0px rgb(212, 212, 212);
+  }
+  .closeMenu {
+    display: block;
+    margin: 0;
+    margin-left: auto;
+    background-color:transparent;
+    border:none;
+    cursor: pointer;
+    padding:1rem;
+  }
+
+  .linkContainer a{
+    display: block;
+    line-height: initial;
+    text-align: end;
+    background-color:transparent;
+ 
+    font-weight:bold;
+    
+  }
+  .navigation{
+    justify-content: center;
+  }
+  section {
+    display: block;
+
+  }
+  .searchMotor {
+    width:fit-content;
+    margin: auto;
+  }
+ .productDisplay {
+   width:100%;
+   padding: 0;
+  }
+  .productImgDisplay {
+      height:17rem;
+  }
+  .productDetailsContainer {
+    width: fit-content;
+    margin: auto;
+  }
+  .productImgContainer {
+    display: inline-flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+  }
+  .firstDisplay {
+   height:35rem;
+   margin-bottom: 2rem;
+  
+  }
+  .secondDisplay {
+    display:inline-block;
+  }
+
+
+
+
+  .leftSide, .rightSide {
+    display: block;
+    width: 100%;
+  
+  }
+  .footerRubriqueLeft {
+    text-align: center;
+  }
+  
+}
+@media screen and (max-width: 842px) {
+  .separator {
+    display: block;
+  }
+  .formLogin2 hr{
+    display:none;
+  }
+  
+
+
+
+}
+
+@media screen and (max-width: 430px) {
+  .formLogin input, .formLogin2 input {
+    width: 16rem;
+  }
+
+
+.footerRubriqueLeft {
+  width: 100%;
+}
+}
+
+
+
+@media screen and (max-width: 384px) {
+  .productCard {
+    width:12rem;
+
+  }
+
+  .formLogin input, .formLogin2 input {
+    width: 14rem;
+  }
+
+
+
+
+}
